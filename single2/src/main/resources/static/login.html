@@ -1,0 +1,73 @@
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous">
+</script>
+<script src="js/hello.js"></script>
+<link href="css/login.css" rel="stylesheet">
+
+
+<!-- 
+<div class="alert alert-danger" ng-show="error">There was a
+	problem logging in. Please try again.</div>
+<form role="form" ng-submit="controller.login()">
+	<div class="form-group">
+		<label for="username">Username:</label> <input type="text"
+			class="form-control" id="username" name="username"
+			ng-model="controller.credentials.username" />
+	</div>
+	<div class="form-group">
+		<label for="password">Password:</label> <input type="password"
+			class="form-control" id="password" name="password"
+			ng-model="controller.credentials.password" />
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+
+
+
+
+
+<!-- <script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ -->
+
+
+<body ng-app="hello">
+	<div class="container" ng-controller="navigation as vm">
+
+		<div class="row" id="pwd-container">
+			<div class="col-md-4"></div>
+
+			<div class="col-md-4">
+				<section class="login-form">
+					<form method="post" action="#" role="login">
+
+						<input type="text" name="username" placeholder="Username"
+							ng-model="controller.credentials.username" required
+							class="form-control input-lg" /> <input type="password"
+							class="form-control input-lg"
+							ng-model="controller.credentials.password" id="password"
+							placeholder="Password" required="true" />
+
+
+						<div class="pwstrength_viewport_progress"></div>
+
+
+						<button type="submit" name="go"
+							class="btn btn-lg btn-primary btn-block"
+							ng-click="controller.login()">Sign in</button>
+						<div>
+							<a href="/register.html">Create account</a> or <a
+								href="/home.html">continue as anonymous</a>
+						</div>
+
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
